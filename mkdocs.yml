@@ -8,7 +8,10 @@ nav:
     - Java - Big picture:
       - Plataform:  beginer/java-big-picture/plataform/readme.md
       - Compiling and Running:  beginer/java-big-picture/compile-run/readme.md
-
+    - Setting up dev environment:
+      - Installing Java: beginer/setting-environment/installing-java/readme.md
+      - Installing IntelliJ: beginer/setting-environment/installing-intellij/readme.md
+      - Packaging apps: beginer/setting-environment/packaging-apps/readme.md
   
   
 repo_url: https://github.com/pedrohaccorsi/java-fundamentals
