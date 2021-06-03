@@ -10,7 +10,7 @@ nav:
       - Compiling and Running:  beginer/java-big-picture/compile-run/readme.md
     - Setting up dev environment:
       - Installing Java: beginer/setting-environment/installing-java/readme.md
-      - Installing IntelliJ: beginer/setting-environment/installing-intellij/readme.md
+      - Installing an IDE: beginer/setting-environment/installing-ide/readme.md
       - Packaging apps: beginer/setting-environment/packaging-apps/readme.md
   
   
