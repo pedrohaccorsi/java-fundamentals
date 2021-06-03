@@ -327,9 +327,53 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Compiling and Running
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Compiling and Running
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#compiling-into-java-bytecode" class="md-nav__link">
+    Compiling into java bytecode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-with-java-virtual-machine" class="md-nav__link">
+    Running with java virtual machine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -366,6 +410,35 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#compiling-into-java-bytecode" class="md-nav__link">
+    Compiling into java bytecode
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-with-java-virtual-machine" class="md-nav__link">
+    Running with java virtual machine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -385,9 +458,22 @@
 <p>Consider the code below. First we have a class declaration, where we declare the class <code>Hello</code>. </p>
 <p>Then, we implement the method <code>public static void main(String[] args)</code>. This method simply prints to the console the text <code>Hello, Superprof!</code>.</p>
 <p><img alt="code" src="../img/java-code-2.jpeg" /></p>
-<p>Now, the next step is to convert our <code>Hello.java</code> into bytecode. We can do it with the command <code>javac Hello.java</code>. The output of this command is a new file called <code>Hello.class</code>, that is the bytecode of class Hello. </p>
-<p>Finally, we send this bytecode into the <code>JVM</code> with the command <code>java Hello.class</code>, so that it can transform the bytecode into machine code and have the CPU execute it.</p>
+<h3 id="compiling-into-java-bytecode">Compiling into java bytecode<a class="headerlink" href="#compiling-into-java-bytecode" title="Permanent link">#</a></h3>
+<p>Now that we have our code, we must compile it into java bytecode, so that the JVM can later process it. This compilation is done with the command <code>javac</code> followed by the class we want to compile, in our case <code>Hello.java</code>. </p>
+<p>The output of this command (<code>javac Hello.java</code>) is a new file called <code>Hello.class</code>, that is the bytecode of class Hello. </p>
+<h3 id="running-with-java-virtual-machine">Running with java virtual machine<a class="headerlink" href="#running-with-java-virtual-machine" title="Permanent link">#</a></h3>
+<p>Finally, we send this bytecode into the <code>JVM</code> with the command <code>java</code> followed by the compiled bytecode name, <code>Hello</code>. This command will trigger <code>JVM</code> which will convert our bytecode to machine code, and have it processed by the CPU.</p>
+<hr>
+
+<h3 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">#</a></h3>
+<p>The Java compilation and running process can be condensed by the image below, where we </p>
+<ol>
+<li>declare a <code>Hello.java</code></li>
+<li>compile it with <code>javac Hello.java</code></li>
+<li>run it with <code>java Hello</code></li>
+</ol>
 <p><img alt="code" src="../img/java-code-3.jpeg" /></p>
+<p>From it, we can understand why java is a <code>write once, run anywhere</code> language, since the actual conversion to machine code isn't made by the compiler itself, but by an entire <code>runtime environemt (JRE)</code> that is client-specific.</p>
                 
               
               
