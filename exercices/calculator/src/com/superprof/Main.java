@@ -12,14 +12,13 @@ public class Main {
         System.out.print("Enter the 2nd number: "); double secondNumber = keyboard.nextDouble();
         System.out.print("Enter the operation: " ); String operation    = keyboard.next();
 
-        double result=0;
-
-        switch(operation){
-            case "+": result = firstNumber+secondNumber; break;
-            case "-": result = firstNumber-secondNumber; break;
-            case "/": result = firstNumber/secondNumber; break;
-            case "*": result = firstNumber*secondNumber; break;
-         }
+        double result = switch (operation) {
+            case "+" -> firstNumber + secondNumber;
+            case "-" -> firstNumber - secondNumber;
+            case "/" -> firstNumber / secondNumber;
+            case "*" -> firstNumber * secondNumber;
+            default -> 0;
+        };
 
         System.out.println(
             firstNumber  + " "   +
